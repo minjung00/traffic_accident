@@ -12,7 +12,7 @@ plot = sns.lineplot(df, x='사고유형대분류', y='사고건수')
 col1.pyplot(plot.figure)
 
 col2.title("Plotly")
-col2.plotly_chart(fig, use_container_width=True)
 fig = px.line(df, x='사고유형대분류', y='사고건수')
+col2.plotly_chart(fig, use_container_width=True)
 
-fig.show()
+#fig.show()
